@@ -5,9 +5,13 @@ node_modules/
 
 # Expo
 .expo/
+expo-env.d.ts
+
+# Build products
 dist/
 web-build/
-expo-env.d.ts
+ios/
+android/
 
 # Native
 .kotlin/
