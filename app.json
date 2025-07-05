@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "Dewlet",
-    "slug": "dewlet"
+    "slug": "dewlet",
+    "scheme": "dew"
   }
 }

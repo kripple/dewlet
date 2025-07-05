@@ -3,13 +3,13 @@ import { styles } from '@/app/style';
 import { Button } from '@react-navigation/elements';
 import { Text, View } from 'react-native';
 
-export function HomeScreen() {
+export function NotFoundScreen() {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
-      <Button onPress={() => navigation.navigate('About')}>About</Button>
+      <Text style={styles.text}>Not Found</Text>
+      <Button onPress={() => navigation.replace('Home')}>Return Home</Button>
     </View>
   );
 }
