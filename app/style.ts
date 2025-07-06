@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const colors = {
+export const colors = {
   primary: '#047857',
   primaryPressed: '#035d4c',
   secondary: '#65a30d',
@@ -11,7 +11,8 @@ const colors = {
   accent: '#d9ed92',
   error: '#b91c1c',
 };
-const layout = {
+
+export const layout = {
   elementHeight: 44,
 };
 
@@ -22,39 +23,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: colors.background,
   },
-
   text: {
     color: colors.textPrimary,
-  },
-
-  pressable: {
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: layout.elementHeight / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: layout.elementHeight,
-  },
-
-  buttonPressable: {
-    backgroundColor: colors.primary,
-  },
-  buttonPressed: {
-    backgroundColor: colors.primaryPressed,
-  },
-  buttonText: {
-    color: colors.background,
-    fontWeight: '600',
-    fontSize: 16,
-  },
-
-  linkPressable: {
-    backgroundColor: 'transparent',
-  },
-  linkText: {
-    color: colors.textSecondary,
-    textDecorationLine: 'underline',
-    fontWeight: '500',
-    fontSize: 16,
   },
 });
