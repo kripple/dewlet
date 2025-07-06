@@ -1,6 +1,6 @@
+import { Button } from '@/app/components/Button';
 import { useNavigation } from '@/app/hooks/useNavigation';
 import { styles } from '@/app/style';
-import { Button } from '@react-navigation/elements';
 import { Text, View } from 'react-native';
 
 export function HomeScreen() {
@@ -9,7 +9,12 @@ export function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Home Screen</Text>
-      <Button onPress={() => navigation.navigate('About')}>About</Button>
+      <Button
+        onPress={() => navigation.navigate('About')}
+        accessibilityLabel="Learn more about Dewlet"
+      >
+        About
+      </Button>
     </View>
   );
 }
