@@ -1,3 +1,4 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStaticNavigation } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -14,12 +15,23 @@ const linking = {
   filter: (url: string) => !url.includes('+expo-auth-session'),
 };
 
-const RootStack = createNativeStackNavigator({
-  initialRouteName: 'Home',
+const screens = {
+  Home: HomeScreen, // must be listed first
+  About: AboutScreen,
+};
+
+const Tabs = createBottomTabNavigator({
+  screens,
+  screenOptions: {
+    headerShown: false, // use Stack header instead
+  },
+});
+
+const Stack = createNativeStackNavigator({
+  initialRouteName: 'Tabs',
   screenOptions: { title: 'Dewlet' },
   screens: {
-    Home: HomeScreen, // must be listed first
-    About: AboutScreen,
+    Tabs,
     NotFound: {
       screen: NotFoundScreen,
       linking: { path: '*' },
@@ -27,9 +39,12 @@ const RootStack = createNativeStackNavigator({
     },
   },
 });
-
-const Navigation = createStaticNavigation(RootStack);
+const Navigation = createStaticNavigation(Stack);
 
 export function App() {
-  return <Navigation linking={linking} fallback={<Text>Loading...</Text>} />;
+  return (
+    <>
+      <Navigation linking={linking} fallback={<Text>Loading...</Text>} />
+    </>
+  );
 }
