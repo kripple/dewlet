@@ -1,6 +1,14 @@
 import { Navigation, linking } from '@/app/components/Navigation';
-import { Text } from 'react-native';
+import { Text, StatusBar } from 'react-native';
+import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
 
 export function App() {
-  return <Navigation linking={linking} fallback={<Text>Loading...</Text>} />;
+  return (
+    <SafeAreaProvider>
+      <StatusBar />
+      <SafeAreaView style={{ flex: 1 }}>
+        <Navigation linking={linking} fallback={<Text>Loading...</Text>} />
+      </SafeAreaView>
+    </SafeAreaProvider>
+  );
 }

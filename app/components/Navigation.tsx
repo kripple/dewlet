@@ -1,6 +1,7 @@
 import { AboutScreen } from '@/app/components/AboutScreen';
 import { HomeScreen } from '@/app/components/HomeScreen';
 import { NotFoundScreen } from '@/app/components/NotFoundScreen';
+import { colors } from '@/app/style';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStaticNavigation } from '@react-navigation/native';
@@ -18,6 +19,7 @@ const tabs = {
   Home: {
     screen: HomeScreen,
     options: {
+      title: 'Dewlet',
       tabBarLabel: 'Home',
       tabBarIcon: ({ color, focused }: { color: string; focused: boolean }) => (
         <Ionicons
@@ -49,6 +51,7 @@ const Tabs = createBottomTabNavigator<typeof tabs>({
   screens: tabs,
   screenOptions: {
     headerShown: false, // use screens (Stack) header instead
+    tabBarActiveTintColor: colors.primary,
   },
 });
 

@@ -44,3 +44,4 @@ To learn more about Expo, use the following resources:
 ## TODO
 
 - `import { useLinkBuilder, useTheme } from '@react-navigation/native';`
+- `"build": "expo build:android --clean && expo build:ios --clean && expo build:web --clean"`

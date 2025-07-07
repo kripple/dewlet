@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "icon": "./assets/images/icon.png",
+    "name": "Dewlet",
+    "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
+    "scheme": "dew",
+    "slug": "dewlet",
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain"
+    },
+    "version": "1.0.0",
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    }
+  }
+}
