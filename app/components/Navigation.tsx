@@ -52,6 +52,10 @@ const Tabs = createBottomTabNavigator<typeof tabs>({
   screenOptions: {
     headerShown: false, // use screens (Stack) header instead
     tabBarActiveTintColor: colors.primary,
+    tabBarStyle: {
+      // TODO: remove shadow on android
+      borderColor: 'transparent', // remove shadow on web & ios
+    },
   },
 });
 
@@ -67,7 +71,14 @@ type AdditionalScreens = Exclude<keyof typeof screens, 'Tabs'>;
 
 const Stack = createNativeStackNavigator<typeof screens>({
   initialRouteName: 'Tabs',
-  screenOptions: { title: 'Dewlet' },
+  screenOptions: {
+    title: 'Dewlet',
+    headerStyle: {
+      backgroundColor: colors.primaryLight,
+    },
+    // TODO: remove shadow on android
+    headerShadowVisible: false, // remove shadow on web & ios
+  },
   screens,
 });
 

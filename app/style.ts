@@ -1,15 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 export const colors = {
-  primary: '#047857',
-  primaryPressed: '#035d4c',
-  secondary: '#65a30d',
-  background: '#f0fdf4',
-  surface: '#d1fae5',
-  textPrimary: '#1b4332',
-  textSecondary: '#4b5563',
-  accent: '#d9ed92',
-  error: '#b91c1c',
+  primary: '#34d399',
+  primaryPressed: '#10b981',
+  primaryLight: '#bbf3da',
+  background: '#f3f4f6',
+  textPrimary: '#333333',
+  textSecondary: '#555555',
+  error: '#e11d48',
 };
 
 export const layout = {
