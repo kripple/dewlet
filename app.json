@@ -1,44 +1,44 @@
 {
   "expo": {
-    "name": "dewlet",
-    "slug": "dewlet",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "dewlet",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
       },
       "edgeToEdgeEnabled": true
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "experiments": {
+      "typedRoutes": true
     },
+    "icon": "./assets/images/icon.png",
+    "ios": {
+      "supportsTablet": true
+    },
+    "name": "dewlet",
+    "newArchEnabled": true,
+    "orientation": "portrait",
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
+          "backgroundColor": "#25292e",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#25292e"
+          "resizeMode": "contain"
         }
       ],
       "expo-font",
       "expo-web-browser"
     ],
-    "experiments": {
-      "typedRoutes": true
+    "scheme": "dewlet",
+    "slug": "dewlet",
+    "userInterfaceStyle": "automatic",
+    "version": "1.0.0",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png",
+      "output": "static"
     }
   }
 }
