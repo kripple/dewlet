@@ -1,21 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from 'react-native';
+import { styles } from '@/constants/styles';
 
 export default function AboutScreen() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>About screen</Text>
-    </View>
-  );
+  return <View style={styles.container}>{/* content goes here */}</View>;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    color: "#fff",
-  },
-});
