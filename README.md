@@ -2,7 +2,7 @@
 
 One day, this multi-platform application will be used to water plants. For now, it is being used to help this Author learn more about React Native.
 
-## How To Dew
+## 💧 How to dew
 
 Follow along here: https://docs.expo.dev/tutorial/create-your-first-app
 
@@ -18,7 +18,7 @@ npm install
 npm start
 ```
 
-#### Known Issues
+#### ⚠️ Known issues
 
 - https://github.com/expo/expo/issues/33248
 - https://github.com/facebook/react-native/issues/25675
