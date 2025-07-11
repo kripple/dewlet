@@ -22,3 +22,8 @@ npm start
 
 - https://github.com/expo/expo/issues/33248
 - https://github.com/facebook/react-native/issues/25675
+
+### References
+
+- https://github.com/expo/expo/tree/main/templates/expo-template-default
+- https://github.com/expo/examples
