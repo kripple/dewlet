@@ -3,7 +3,11 @@
     "icon": "./assets/images/icon.png",
     "name": "Dewlet",
     "orientation": "portrait",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "scheme": "dew",
     "slug": "dewlet",
     "splash": {
@@ -14,6 +18,12 @@
     "version": "1.0.0",
     "web": {
       "favicon": "./assets/images/favicon.png"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.dewlet"
+    },
+    "android": {
+      "package": "com.anonymous.dewlet"
     }
   }
 }
